@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace WebApp24I
+namespace WebApp24I.WebApiApp
 {
     public class Program
     {

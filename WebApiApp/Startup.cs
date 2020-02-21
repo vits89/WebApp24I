@@ -6,10 +6,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using AutoMapper;
-using WebApp24I.Infrastructure;
-using WebApp24I.Models;
+using WebApp24I.AppCore.Interfaces;
+using WebApp24I.AppCore.Models;
+using WebApp24I.Infrastructure.Services;
 
-namespace WebApp24I
+namespace WebApp24I.WebApiApp
 {
     public class Startup
     {
@@ -27,9 +28,9 @@ namespace WebApp24I
             services.Configure<MessageBrokerSettings>(Configuration.GetSection("MessageBroker"));
             services.AddSingleton<IMessageProducer, MessageProducer>(sp =>
             {
-                var options = sp.GetService<IOptions<MessageBrokerSettings>>().Value;
+                var settings = sp.GetService<IOptions<MessageBrokerSettings>>().Value;
 
-                return new MessageProducer(options);
+                return new MessageProducer(settings);
             });
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddControllers();

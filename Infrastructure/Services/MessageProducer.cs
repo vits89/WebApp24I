@@ -3,9 +3,11 @@ using System.Text;
 using System.Text.Json;
 using System.Threading;
 using RabbitMQ.Client;
-using WebApp24I.Models;
+using WebApp24I.AppCore.Entities;
+using WebApp24I.AppCore.Interfaces;
+using WebApp24I.AppCore.Models;
 
-namespace WebApp24I.Infrastructure
+namespace WebApp24I.Infrastructure.Services
 {
     public class MessageProducer : IMessageProducer, IDisposable
     {

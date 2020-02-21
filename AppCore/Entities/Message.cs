@@ -1,4 +1,4 @@
-﻿namespace WebApp24I.Models
+﻿namespace WebApp24I.AppCore.Entities
 {
     public class Message
     {

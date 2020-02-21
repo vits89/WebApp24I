@@ -1,4 +1,4 @@
-﻿namespace WebApp24I.Models
+﻿namespace WebApp24I.AppCore.Models
 {
     public class MessageBrokerSettings
     {

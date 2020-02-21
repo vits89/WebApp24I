@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
-using WebApp24I.Infrastructure;
-using WebApp24I.Models;
-using WebApp24I.ViewModels;
+using WebApp24I.AppCore.Entities;
+using WebApp24I.AppCore.Interfaces;
+using WebApp24I.WebApiApp.ViewModels;
 
-namespace WebApp24I.Controllers
+namespace WebApp24I.WebApiApp.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

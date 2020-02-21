@@ -1,6 +1,6 @@
-﻿using WebApp24I.Models;
+﻿using WebApp24I.AppCore.Entities;
 
-namespace WebApp24I.Infrastructure
+namespace WebApp24I.AppCore.Interfaces
 {
     public interface IMessageProducer
     {

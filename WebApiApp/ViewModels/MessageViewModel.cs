@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebApp24I.ViewModels
+namespace WebApp24I.WebApiApp.ViewModels
 {
     public class MessageViewModel
     {

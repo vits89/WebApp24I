@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using WebApp24I.Models;
-using WebApp24I.ViewModels;
+using WebApp24I.AppCore.Entities;
+using WebApp24I.WebApiApp.ViewModels;
 
-namespace WebApp24I.Infrastructure
+namespace WebApp24I.WebApiApp.Infrastructure
 {
     public class MessageMapperProfile : Profile
     {

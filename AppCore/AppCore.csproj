@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>WebApp24I.AppCore</AssemblyName>
+    <RootNamespace>WebApp24I.AppCore</RootNamespace>
+  </PropertyGroup>
+
+</Project>
